@@ -1,10 +1,13 @@
+# 木の構造をクラスで作る
 class Node:
     def __init__(self,key):
         self.left = None
         self.right = None
         self.val = key
 
+# 挿入のための関数
 def insert(root,key):
+# 初期値チェック
     if root is None:
         return Node(key)
     else:
@@ -15,6 +18,7 @@ def insert(root,key):
         else:
             root.left = insert(root.left,key)
     return root
+
 
 def inorder(root):
     if root:
