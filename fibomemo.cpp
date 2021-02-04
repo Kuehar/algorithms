@@ -34,4 +34,4 @@ int main(){
     dp.assign(N,INF);
 
     cout << rec(N-1) << endl;
-}
+}　
