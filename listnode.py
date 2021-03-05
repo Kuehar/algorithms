@@ -17,7 +17,7 @@ class ListNode:
     def insert_node(node: ListNode,new_node: ListNode) -> None:
         new_node.next = node.next
         node.next = new_node
-
+    
     # Delete a node. Time complexity O(1)
     def delete_node(node: ListNode) -> None:
         node.next = node.next.next
