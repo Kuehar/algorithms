@@ -9,8 +9,8 @@ class BinaryTreeNode:
             # Preorder
             print("Preorder: %d" % root.left)
             tree_traversal(root.left)
-
+            # Inorder
             print("Inorder: %d" % root.data)
             tree_traversal(root.right)
-
+            # Postorder
             print("Postorder: %d" % root.data)
