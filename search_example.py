@@ -1,7 +1,5 @@
 # [25,36,4,55,71,18,0,71,89,65]
 # 89
-
-
 # O(N)
 def linearSearch(nums,ans):
     for i in range(len(nums)):
@@ -11,10 +9,11 @@ def linearSearch(nums,ans):
     
 
 
-nums = [25,36,4,55,71,18,0,71,89,65]
-ans = 89
+## nums = [25,36,4,55,71,18,0,71,89,65]
+## ans = 89
+## print(linearSearch(nums,ans)) # True
 
-print(linearSearch(nums,ans)) # True
-
-
-
+for i in range(10):
+    for j in range(i+1):
+        print(i)
+        print(j)
