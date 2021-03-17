@@ -17,3 +17,4 @@ class Solution:
 # Runtime: 28 ms, faster than 80.87% of Python3 online submissions for N-th Tribonacci Number.
 # Memory Usage: 14.3 MB, less than 13.79% of Python3 online submissions for N-th Tribonacci Number.
 # https://qiita.com/KueharX/items/0ece7bf16e94046861d6
+# https://www.kueharx.com/2021/03/leetcode.html
