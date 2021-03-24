@@ -1,3 +1,5 @@
+import random
+
 def selection_sort(array):
     x = array.copy()
     n = len(x)
@@ -8,3 +10,9 @@ def selection_sort(array):
                 min_idx = j
         x[i],x[min_idx] = x[min_idx],x[i]
     return x
+
+
+
+my_array = [random.randint(0,99) for i in range(20)]
+random.shuffle(my_array)
+print(my_array)
