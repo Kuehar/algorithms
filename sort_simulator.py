@@ -1,3 +1,4 @@
+import timeit
 import random
 
 def selection_sort(array):
@@ -12,6 +13,7 @@ def selection_sort(array):
     return x
 
 
+my_array = [random.randint(0,99) for i in range(10000)]
+print(timeit.timeit('selection_sort(my_array)',globals=globals(),number=1))
 
-my_array = [random.randint(0,99) for i in range(20)]
-print(random.shuffle(my_array))
+# 2.768218003

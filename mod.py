@@ -1,3 +1,5 @@
+# O(n)
+
 def simple_gcd(a,b):
     if a < b:
         a,b = b,a
