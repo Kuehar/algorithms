@@ -14,6 +14,8 @@ def selection_sort(array):
 
 
 my_array = [random.randint(0,99) for i in range(10000)]
-print(timeit.timeit('selection_sort(my_array)',globals=globals(),number=1))
-
+# print(timeit.timeit('selection_sort(my_array)',globals=globals(),number=1))
 # 2.768218003
+
+print(timeit.timeit('sorted(my_array)',globals=globals(),number=1))
+# 0.0009780710000000005
