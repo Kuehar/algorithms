@@ -7,6 +7,7 @@ merge two sorted arrays such as [42,72],[39,71]
 4.[42,72],[39,71] -> [39,42,71,72]
 """
 
+# O(N)
 def merge_arrays(left,right=[]):
     res = []
     i = j = 0
@@ -19,4 +20,5 @@ def merge_arrays(left,right=[]):
         else:
             res.append(right[j])
             i += 1
+    # added remaining arrays element to return array.
     return res + left[i:] + right[j:]
