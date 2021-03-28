@@ -31,6 +31,7 @@ def step(array):
         res.append(merge_arrays(*array[i:i+2]))
     return res
 
+"""
 # Initialize random number generator
 random.seed(4)
 
@@ -52,3 +53,18 @@ print(step3)
 step4 = step(step3)
 print(step4)
 # [[2, 7, 8, 11, 13, 19, 30, 37, 38, 50, 51, 61, 70, 92, 97]]
+
+"""
+
+def merge_sort(array):
+    # Turning all numbers into list
+    res = [[v] for v in array]
+    while len(res[0]) != len(array):
+        res = step(res)
+    return res[0]
+
+my_array = [random.randint(0,100) for i in range(15)]
+my_array = [[v] for v in my_array]
+
+print(merge_sort(my_array))
+# [[7], [29], [30], [36], [37], [42], [49], [50], [57], [71], [74], [80], [81], [91], [94]]
