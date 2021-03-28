@@ -54,8 +54,6 @@ step4 = step(step3)
 print(step4)
 # [[2, 7, 8, 11, 13, 19, 30, 37, 38, 50, 51, 61, 70, 92, 97]]
 
-"""
-
 def merge_sort(array):
     # Turning all numbers into list
     res = [[v] for v in array]
@@ -68,3 +66,17 @@ my_array = [[v] for v in my_array]
 
 print(merge_sort(my_array))
 # [[7], [29], [30], [36], [37], [42], [49], [50], [57], [71], [74], [80], [81], [91], [94]]
+"""
+
+# Implement merge_sort with recursion.
+
+def recursive_merge_sort(array):
+    if len(array) <= 1:
+        return array
+    mid_idx = len(array) // 2
+    left = array[:mid_idx]
+    right = array[mid_idx:]
+    return merge_arrays(merge_sort(left),merge_sort(right))
+
+print(recursive_merge_sort(my_array))
+[[8], [12], [15], [23], [40], [44], [51], [51], [56], [57], [79], [80], [86], [92], [95]]
