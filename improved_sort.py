@@ -79,4 +79,4 @@ def recursive_merge_sort(array):
     return merge_arrays(merge_sort(left),merge_sort(right))
 
 print(recursive_merge_sort(my_array))
-[[8], [12], [15], [23], [40], [44], [51], [51], [56], [57], [79], [80], [86], [92], [95]]
+# [[8], [12], [15], [23], [40], [44], [51], [51], [56], [57], [79], [80], [86], [92], [95]]
