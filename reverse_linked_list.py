@@ -7,3 +7,6 @@ def reverse_linked_list(head):
         head = head.next
     while nodes:
         print(nodes.pop())
+
+# 1 -> 4 -> 2 -> 7
+# 7 -> 2 -> 4 -> 1
