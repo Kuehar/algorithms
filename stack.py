@@ -12,3 +12,8 @@ print(stack) # [3,4,5,6]
 
 stack.pop()
 print(stack) # [3,4,5]
+
+
+class Stack:
+    def init(self):
+        

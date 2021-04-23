@@ -1,3 +1,7 @@
+
+#A is Array,N is length of Array
+# O(N^2)
+
 def bubble_sort(A,N):
     for i in range(N):
         for j in reversed(range(i+1, N)):
