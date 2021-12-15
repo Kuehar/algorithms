@@ -12,3 +12,8 @@ def merge_sorted_arrays(sorted_arrays,):
         while min_heap:
             smallest_entry,smallest_array_i = heapq.heappop(min_heap)
             smallest_array_iter = sorted_arrays_iters[smallest_array_i]
+             result.append(smallest_entry)
+            next_element = next(smallest_array_iter,None)
+            if next_element is not None:
+                heapq.heappush(min_heap,(next_element,smallest_array_i))
+        return result
