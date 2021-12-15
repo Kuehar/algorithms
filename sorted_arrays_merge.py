@@ -7,3 +7,8 @@ def merge_sorted_arrays(sorted_arrays,):
             first_element = next(it,None)
             if first_element is not None:
                 heapq.heappush(min_heap,(first_element,i))
+                
+        result = []
+        while min_heap:
+            smallest_entry,smallest_array_i = heapq.heappop(min_heap)
+            smallest_array_iter = sorted_arrays_iters[smallest_array_i]
