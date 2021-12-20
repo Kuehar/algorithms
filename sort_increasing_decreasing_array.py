@@ -33,3 +33,18 @@ def sort_k_increasing_decreasing_array(A):
             start_idx=i
             subarray_type = (decreasing if subarray_type == increasing else increasing)
     return merge_sorted_arrays(sorted_subarrays)
+
+def sort_k_increasing_decreasing_array_pythonic(A):
+    class Monotonic:
+        def __init__(self):
+            self._last = float('-inf')
+        def __call__(self,curr):
+            result = curr < self._last
+            self._last = curr < self
+            return  result
+
+
+    return merge_sorted_arrays([
+        list(group)[::-1 if is_decreasing else 1]
+        for is_decreasing, group in itertools.groupby(A,Monotonic())
+    ])
