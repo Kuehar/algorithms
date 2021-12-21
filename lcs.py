@@ -1,3 +1,7 @@
+# 最長共通部分列(Common Longest Subsequence)の解法
+# 二つの文字列+1の長さの二次元配列を作り、それぞれの文字列を二重for文で舐めながら比較する
+
+
 def lcs(X,Y):
     dp = [[0 for i in range(len(X)+1)] for j in range(len(Y)+1)]
     for i in range(len(Y)):
